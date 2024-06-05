@@ -25,10 +25,9 @@ python ffnetsr/test.py --config $CONFIG_FILE
 
 ## Results
 
-### Quantitative
+![image](https://github.com/ysj9909/FFNet/blob/main/super_resolution/figs/Quantitative.png)
 
-<!-- figs/Quantitative.png here? -->
 
-### Visual
-
-<!-- figs/Visual.png here? -->
+## Visualization
+![image](https://github.com/ysj9909/FFNet/blob/main/super_resolution/figs/Visual.png)
+  
