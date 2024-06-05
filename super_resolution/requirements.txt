@@ -1,0 +1,11 @@
+numpy
+basicsr
+opencv-python
+requests
+torch
+torchvision
+einops
+matplotlib
+tb-nightly
+timm
+protobuf<4.0.0
