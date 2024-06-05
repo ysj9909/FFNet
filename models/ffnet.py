@@ -202,10 +202,11 @@ class BN_Conv2d(torch.nn.Sequential):   # only for 1x1 conv with bias = False
 class RepVGGDW(torch.nn.Module):
     def __init__(self, in_dim, out_dim, ks = 7, stride = 1):
         super().__init__()
-        self.ks = ks
         self.in_dim = in_dim
         self.out_dim = out_dim
+        self.ks = ks
         self.stride = stride
+        
         ks_ = ks // 2
         self.conv = Conv2d_BN(in_dim, out_dim, ks, stride, ks // 2, groups = in_dim)
         self.conv1 = Conv2d_BN(in_dim, out_dim, ks_, stride, ks_ // 2, groups = in_dim)
@@ -228,10 +229,12 @@ class RepVGGDW(torch.nn.Module):
         final_conv_w = conv_w + conv1_w 
         final_conv_b = conv_b + conv1_b
         
-        fin_conv = nn.Conv2d(self.in_dim, self.out_dim, self.ks, self.stride, self.ks//2, groups = self.in_dim, bias = True)
+        fin_conv = nn.Conv2d(self.in_dim, self.out_dim, self.ks, stride = self.stride,
+                             padding = self.ks // 2, groups = self.in_dim, bias = True)
 
         fin_conv.weight.data.copy_(final_conv_w)
         fin_conv.bias.data.copy_(final_conv_b)
+        self.__delattr__('conv')
         self.__delattr__('conv1')
         return fin_conv
 
