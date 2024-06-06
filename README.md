@@ -5,6 +5,7 @@ Official PyTorch implementation of FFNet, from the following paper "[MetaMixer I
 *Seokju Yun, Dongheon Lee, Youngmin Ro.*
 
 ![first metamixer fig](https://github.com/ysj9909/FFNet/blob/main/docs/metamixer.png)
+Figure: Overview of MetaMixer. (a) MetaMixer is derived by not specifying sub-operations within the query-key-value framework. We assert that the competence of Transformers primarily originates from MetaMixer, which we deem as the true **backbone** of Transformer. (b) To demonstrate this and propose a FFN-like efficient token mixer, we replace the inefficient sub-operations of self-attention with those from FFN while retaining MetaMixer structure. (c) Our MetaMixer-based pure ConvNets outperform domain-specialized competitors in various tasks, confirming the superiority of the MetaMixer framework.
 
 <details>
   <summary>
