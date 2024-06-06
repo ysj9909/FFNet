@@ -85,9 +85,9 @@ For example, to evaluate the `FFNet-4` with a single node with 8 GPUs:
 sh dist_test.sh configs/ade20k/upernet_ffnet_4_512_160k_ade20k.py upernet_ffnet_4_512_160k_ade20k.pth 8 --eval mIoU --cfg-options model.backbone.init_cfg.checkpoint=None
 ```
 
-For system-level semantic segmentation experiments, we conducted our experiments based on the [SegNeXt](https://github.com/Visual-Attention-Network/SegNeXt/tree/main) codebase.
+**For system-level semantic segmentation experiments, we conducted our experiments based on the [SegNeXt](https://github.com/Visual-Attention-Network/SegNeXt/tree/main) codebase.
 We applied the model code (backbone, head in the mmseg_custom) and configuration files to the SegNeXt code, enabling us to train and evaluate FFNet<sub>seg</sub>.
-Please follow the instructions of SegNeXt to conduct the experiments.
+Please follow the instructions of SegNeXt to conduct the experiments.**
 
 
 ### Training
