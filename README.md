@@ -1,2 +1,6 @@
-# FFNet
-MetaMixer Is All You Need
+# MetaMixer Is All You Need
+
+Official PyTorch implementation of FFNet, from the following paper "[MetaMixer Is All You Need](https://arxiv.org/abs/2406.02021)".
+
+*Seokju Yun, Dongheon Lee, Youngmin Ro.*
+

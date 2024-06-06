@@ -61,8 +61,8 @@ Prepare datasets according to the [guidelines](https://github.com/open-mmlab/mms
 | FFNet-2 | ADE20K | [model](-) | UPerNet | 160K | 47.1 | 47.8 | 58M | 942G | [model](-) |
 | FFNet-3 | ADE20K | [model](-) | UPerNet | 160K | 49.6 | 50.2 | 80M | 1010G | [model](-) |
 | FFNet-4 | ADE20K | [model](-) | UPerNet | 160K | 50.7 | 51.7 | 113M | 1158G | [model](-) |
-| FFNet-seg | ADE20K | [model](-) | FFNet | 160K | 50.1 | 51.2 | 68M | 74G | [model](-) |
-| FFNet-seg | Cityscapes | [model](-) | FFNet | 160K | 83.2 | 84.1 | 68M | 577G | [model](-) |
+| FFNet<sub>seg</sub> | ADE20K | [model](-) | FFNet | 160K | 50.1 | 51.2 | 68M | 74G | [model](-) |
+| FFNet<sub>seg</sub> | Cityscapes | [model](-) | FFNet | 160K | 83.2 | 84.1 | 68M | 577G | [model](-) |
 
 
 ### Evaluation
@@ -86,7 +86,7 @@ sh dist_test.sh configs/ade20k/upernet_ffnet_4_512_160k_ade20k.py upernet_ffnet_
 ```
 
 For system-level semantic segmentation experiments, we conducted our experiments based on the [SegNeXt](https://github.com/Visual-Attention-Network/SegNeXt/tree/main) codebase.
-We applied the model code (backbone, head in the mmseg_custom) and configuration files to the SegNeXt code, enabling us to train and evaluate FFNet-seg.
+We applied the model code (backbone, head in the mmseg_custom) and configuration files to the SegNeXt code, enabling us to train and evaluate FFNet<sub>seg</sub>.
 Please follow the instructions of SegNeXt to conduct the experiments.
 
 
