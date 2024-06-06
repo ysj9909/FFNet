@@ -1,5 +1,10 @@
 # MetaMixer Is All You Need
 
+<p align="left">
+<a href="https://arxiv.org/abs/2406.02021" alt="arXiv">
+    <img src="https://img.shields.io/badge/arXiv-2406.02021-b31b1b.svg?style=flat" /></a>
+</p>
+
 Official PyTorch implementation of FFNet, from the following paper "[MetaMixer Is All You Need](https://arxiv.org/abs/2406.02021)".
 
 *Seokju Yun, Dongheon Lee, Youngmin Ro.*
