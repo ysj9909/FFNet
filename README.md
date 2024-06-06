@@ -26,3 +26,20 @@ The strong and general performance of our proposed method validates our hypothes
 We show that using only simple operations like convolution and GELU in the MetaMixer can achieve superior performance.
 We hope that this intuition will catalyze a paradigm shift in the battle of network structures, sparking a wave of new research.
 </details>
+
+
+## Pre-trained Models
+| Variant | Resolution | Top-1 Acc. | #params | FLOPs | Latency | model |
+|:---:|:---:|:---:|:---:| :---:|:---:|:---:|
+| FFNet-1 | 256x256 | 81.3 | 13.7M | 2.9G | 1.8 |[model](-) |
+| FFNet-2 | 256x256 | 82.9 | 26.9M | 6.0G | 3.1 | [model](-) |
+| FFNet-3 | 256x256 | 83.9 | 48.3M | 10.1G | 4.5 | [model](-) |
+| FFNet-3 | 384x384 | 84.5 | 48.3M | 22.8G | 9.1 | [model](-) |
+| FFNet-4 | 384x384 | 85.3 | 79.2M | 43.1G | 15.2 | [model](-) |
+
+Models trained on ImageNet-1K with knowledge distillation.
+| Variant | Resolution | Top-1 Acc. | #params | FLOPs | Latency | model |
+|:---:|:---:|:---:|:---:| :---:|:---:|:---:|
+| FFNet-1 | 256x256 | 82.1 | 13.7M | 2.9G | 1.8 |[model](-) |
+| FFNet-2 | 256x256 | 83.7 | 26.9M | 6.0G | 3.1 | [model](-) |
+| FFNet-3 | 256x256 | 84.5 | 48.3M | 10.1G | 4.5 | [model](-) |
