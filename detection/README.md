@@ -48,7 +48,7 @@ pip install opencv-python termcolor yacs pyyaml scipy
 Prepare COCO according to the guidelines in [MMDetection v2.28.1](https://github.com/open-mmlab/mmdetection/blob/master/docs/en/1_exist_data_model.md).
 
 
-### Results and Fine-tuned Models
+## Results and Fine-tuned Models
 
 | Variant | Pretrained Model | Method | Lr Schd | box mAP | mask mAP | Fine-tuned Model |
 |:---:|:---:|:---:|:---:| :---:|:---:|:---:|:---:| :---:|
