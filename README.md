@@ -195,7 +195,14 @@ python export_model.py --variant ffnet_1 --output-dir /path/to/save/exported_mod
 ```
 
 ## Bibtex
--
+```
+@article{yun2024metamixer,
+  title={MetaMixer Is All You Need},
+  author={Yun, Seokju and Lee, Dongheon and Ro, Youngmin},
+  journal={arXiv preprint arXiv:2406.02021},
+  year={2024}
+}
+```
 
-## Acknowledgements
+## Acknowledgment
 We sincerely appreciate [pytorch-image-models](https://github.com/rwightman/pytorch-image-models), [PyTorch](https://github.com/pytorch/pytorch), [DeiT](https://github.com/facebookresearch/deit), [RepVGG](https://github.com/DingXiaoH/RepVGG), and [FastViT](https://github.com/apple/ml-fastvit) for their wonderful implementations.
