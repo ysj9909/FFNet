@@ -29,6 +29,8 @@ We hope that this intuition will catalyze a paradigm shift in the battle of netw
 
 
 ## Pre-trained Models
+
+ImageNet-1K
 | Variant | Resolution | Top-1 Acc. | #params | FLOPs | Latency | model |
 |:---:|:---:|:---:|:---:| :---:|:---:|:---:|
 | FFNet-1 | 256x256 | 81.3 | 13.7M | 2.9G | 1.8 |[model](-) |
