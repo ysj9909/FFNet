@@ -38,6 +38,17 @@ python ffnetsr/test.py --config $CONFIG_FILE
 ![image](https://github.com/ysj9909/FFNet/blob/main/super_resolution/figs/Visual.png)
 
 
+## Bibtex
+```
+@article{yun2024metamixer,
+  title={MetaMixer Is All You Need},
+  author={Yun, Seokju and Lee, Dongheon and Ro, Youngmin},
+  journal={arXiv preprint arXiv:2406.02021},
+  year={2024}
+}
+```
+
+
 ### Acknowledgement
 This code is based on [BasicSR](https://github.com/XPixelGroup/BasicSR) toolbox. Thanks for the awesome work.
   
