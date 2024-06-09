@@ -195,7 +195,7 @@ python export_model.py --variant ffnet_1 --output-dir /path/to/save/exported_mod
 ```
 
 ## MetaMixer's Task-Generality
-For detailed documentation, please refer to these documents as follows:
+For detailed documentation, please refer to these documents and codes as follows:
 * [Detection and instance segmentation](https://github.com/ysj9909/FFNet/tree/main/detection)
 * [2D semantic segmentation](https://github.com/ysj9909/FFNet/tree/main/segmentation)
 * [Super-resolution](https://github.com/ysj9909/FFNet/tree/main/super_resolution)
