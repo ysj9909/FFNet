@@ -1,4 +1,4 @@
-# FFNetSR
+# FFNet for Super-Resolution
 
 <!-- figs/Architecture.png here? -->
 
