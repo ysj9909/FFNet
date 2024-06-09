@@ -39,6 +39,16 @@ sh ./scripts/ETTm1.sh
 ### Results
 ![forecasting_results](https://github.com/ysj9909/FFNet/blob/main/docs/forecasting_results.png)
 
+## Bibtex
+```
+@article{yun2024metamixer,
+  title={MetaMixer Is All You Need},
+  author={Yun, Seokju and Lee, Dongheon and Ro, Youngmin},
+  journal={arXiv preprint arXiv:2406.02021},
+  year={2024}
+}
+```
+
 
 ## Acknowledgement
 
