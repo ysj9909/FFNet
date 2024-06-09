@@ -58,11 +58,11 @@ Prepare datasets according to the [guidelines](https://github.com/open-mmlab/mms
 
 | Variant | Dataset | Pretrained Model | Method | Lr Schd | mIoU | mIoU (ms+flip) | #params | FLOPs | Fine-tuned Model |
 |:---:|:---:|:---:|:---:| :---:|:---:|:---:|:---:| :---:|:---:|
-| FFNet-2 | ADE20K | [model](-) | UPerNet | 160K | 47.1 | 47.8 | 58M | 942G | [model](-) |
-| FFNet-3 | ADE20K | [model](-) | UPerNet | 160K | 49.6 | 50.2 | 80M | 1010G | [model](-) |
-| FFNet-4 | ADE20K | [model](-) | UPerNet | 160K | 50.7 | 51.7 | 113M | 1158G | [model](-) |
-| FFNet<sub>seg</sub> | ADE20K | [model](-) | FFNet | 160K | 50.1 | 51.2 | 68M | 74G | [model](-) |
-| FFNet<sub>seg</sub> | Cityscapes | [model](-) | FFNet | 160K | 83.2 | 84.1 | 68M | 577G | [model](-) |
+| FFNet-2 | ADE20K | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_2_distillation.pth.tar) | UPerNet | 160K | 47.1 | 47.8 | 58M | 942G | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/upernet_ffnet_2_512_160k_ade20k.pth) |
+| FFNet-3 | ADE20K | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_3_distillation.pth.tar) | UPerNet | 160K | 49.6 | 50.2 | 80M | 1010G | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/upernet_ffnet_3_512_160k_ade20k.pth) |
+| FFNet-4 | ADE20K | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_4_384.pth.tar) | UPerNet | 160K | 50.7 | 51.7 | 113M | 1158G | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/upernet_ffnet_4_512_160k_ade20k.pth) |
+| FFNet<sub>seg</sub> | ADE20K | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_seg.pth.tar) | FFNet | 160K | 50.1 | 51.2 | 68M | 74G | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_seg_sys_512_160k_ade20k.pth) |
+| FFNet<sub>seg</sub> | Cityscapes | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_seg.pth.tar) | FFNet | 160K | 83.2 | 84.1 | 68M | 577G | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_seg_sys_1024_160k_cityscapes.pth) |
 
 
 ### Evaluation
@@ -85,9 +85,9 @@ For example, to evaluate the `FFNet-4` with a single node with 8 GPUs:
 sh dist_test.sh configs/ade20k/upernet_ffnet_4_512_160k_ade20k.py upernet_ffnet_4_512_160k_ade20k.pth 8 --eval mIoU --cfg-options model.backbone.init_cfg.checkpoint=None
 ```
 
-For system-level semantic segmentation experiments, we conducted our experiments based on the [SegNeXt](https://github.com/Visual-Attention-Network/SegNeXt/tree/main) codebase.
+**For system-level semantic segmentation experiments, we conducted our experiments based on the [SegNeXt](https://github.com/Visual-Attention-Network/SegNeXt/tree/main) codebase.
 We applied the model code (backbone, head in the mmseg_custom) and configuration files to the SegNeXt code, enabling us to train and evaluate FFNet<sub>seg</sub>.
-Please follow the instructions of SegNeXt to conduct the experiments.
+Please follow the instructions of SegNeXt to conduct the experiments.**
 
 
 ### Training

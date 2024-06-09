@@ -2,7 +2,7 @@
 
 <!-- figs/Architecture.png here? -->
 
-## Installation
+### Setup
 ```bash
 conda create -n ffnetsr python=3.10
 conda activate ffnetsr
@@ -11,23 +11,33 @@ pip install -r requirements.txt
 python setup.py develop
 ```
 
-## Usage
-
-### Train
+### Training
+Run the following commands for training:
 ```bash
 python ffnetsr/train.py --config $CONFIG_FILE
 ```
 
-### Test
+### Evaluation
+Download the pre-trained models and test sets. Run the following commands:
 ```bash
 python ffnetsr/test.py --config $CONFIG_FILE
 ```
 
 ## Results
 
+### Pre-trained Models
+|  Variant   | Settings | model |
+|  ----  | ----  | --- |
+| FFNet<sub>sr</sub>-light  | DIV2K $\times 2$ | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/FFNetSR_light_DIV2K.pth) |
+| FFNet<sub>sr</sub>  | DF2K $\times 2$ | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/FFNetSR_DF2K.pth) | 
+
 ![image](https://github.com/ysj9909/FFNet/blob/main/super_resolution/figs/Quantitative.png)
 
 
-## Visualization
+### Visualization
 ![image](https://github.com/ysj9909/FFNet/blob/main/super_resolution/figs/Visual.png)
+
+
+### Acknowledgement
+This code is based on [BasicSR](https://github.com/XPixelGroup/BasicSR) toolbox. Thanks for the awesome work.
   

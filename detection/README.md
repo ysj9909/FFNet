@@ -51,9 +51,9 @@ Prepare COCO according to the guidelines in [MMDetection v2.28.1](https://github
 ### Results and Fine-tuned Models
 | Variant | Pretrained Model | Method | Lr Schd | box mAP | mask mAP | Fine-tuned Model |
 |:---:|:---:|:---:|:---:| :---:|:---:|:---:|
-| FFNet-2 | model | Cascade Mask R-CNN | 3x | 51.8 | 44.9 | model |
-| FFNet-3 | model | Cascade Mask R-CNN | 3x | 52.8 | 45.6 | model |
-| FFNet-4 | model | Cascade Mask R-CNN | 3x | 53.4 | 45.9 | model |
+| FFNet-2 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_2_distillation.pth.tar) | Cascade Mask R-CNN | 3x | 51.8 | 44.9 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/casc_mask_rcnn_ffnet_2_fpn_3x_coco.pth) |
+| FFNet-3 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_3_distillation.pth.tar) | Cascade Mask R-CNN | 3x | 52.8 | 45.6 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/casc_mask_rcnn_ffnet_3_fpn_3x_coco.pth) |
+| FFNet-4 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_4_384.pth.tar) | Cascade Mask R-CNN | 3x | 53.4 | 45.9 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/casc_mask_rcnn_ffnet_4_fpn_3x_coco.zip) |
 
 
 ### Evaluation
