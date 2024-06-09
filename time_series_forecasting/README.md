@@ -37,7 +37,7 @@ sh ./scripts/ETTm1.sh
 
 
 ## Results
--
+![forecasting_results]([https://github.com/ysj9909/FFNet/blob/main/docs/metamixer.png](https://github.com/ysj9909/FFNet/blob/main/docs/forecasting_results.png))
 
 
 ## Acknowledgement
