@@ -25,7 +25,7 @@ python ffnetsr/test.py --config $CONFIG_FILE
 
 ## Results
 
-### Pre-trained Models
+### Pre-trained Models and Results
 |  Variant   | Settings | model |
 |  ----  | ----  | --- |
 | FFNet<sub>sr</sub>-light  | DIV2K $\times 2$ | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/FFNetSR_light_DIV2K.pth) |
