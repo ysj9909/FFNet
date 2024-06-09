@@ -194,6 +194,15 @@ python export_model.py --variant ffnet_1 --output-dir /path/to/save/exported_mod
 --checkpoint /path/to/pretrained_checkpoints/ffnet_1.pth.tar
 ```
 
+## MetaMixer's Task-Generality
+For detailed documentation, please refer to these documents as follows:
+* [Detection and instance segmentation](https://github.com/ysj9909/FFNet/tree/main/detection)
+* [2D semantic segmentation](https://github.com/ysj9909/FFNet/tree/main/segmentation)
+* [Super-resolution](https://github.com/ysj9909/FFNet/tree/main/super_resolution)
+* [Time series long-term forecasting](https://github.com/ysj9909/FFNet/tree/main/time_series_forecasting)
+* [3D semantic segmentation](https://github.com/ysj9909/FFNet/tree/main/3d_sem_segmentation)
+
+
 ## Bibtex
 ```
 @article{yun2024metamixer,
@@ -203,6 +212,11 @@ python export_model.py --variant ffnet_1 --output-dir /path/to/save/exported_mod
   year={2024}
 }
 ```
+
+
+## License
+This project is released under the Apache 2.0 license. Please see the [LICENSE](LICENSE) file for more information.
+
 
 ## Acknowledgment
 We sincerely appreciate [pytorch-image-models](https://github.com/rwightman/pytorch-image-models), [PyTorch](https://github.com/pytorch/pytorch), [DeiT](https://github.com/facebookresearch/deit), [RepVGG](https://github.com/DingXiaoH/RepVGG), and [FastViT](https://github.com/apple/ml-fastvit) for their wonderful implementations.
