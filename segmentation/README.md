@@ -104,6 +104,16 @@ For example, to train `FFNet-2` with 8 GPUs on 1 node (total batch size 16), run
 sh dist_train.sh configs/ade20k/upernet_ffnet_2_512_160k_ade20k.py 8
 ```
 
+## Bibtex
+```
+@article{yun2024metamixer,
+  title={MetaMixer Is All You Need},
+  author={Yun, Seokju and Lee, Dongheon and Ro, Youngmin},
+  journal={arXiv preprint arXiv:2406.02021},
+  year={2024}
+}
+```
+
 
 ### Acknowledgements 
 

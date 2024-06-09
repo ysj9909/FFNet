@@ -16,8 +16,6 @@ def replace_batchnorm(net):
             fused = child.fuse()
             setattr(net, child_name, fused)
             replace_batchnorm(fused)
-        elif isinstance(child, torch.nn.BatchNorm2d):
-            setattr(net, child_name, torch.nn.Identity())
         else:
             replace_batchnorm(child)
 

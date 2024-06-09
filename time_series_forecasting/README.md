@@ -2,7 +2,7 @@
 
 This folder contains the implementation of the FFNet for time series forecasting.
 
-To demonstrate the generality of the MetaMixer framework, we apply our convolutional mixer design not only to image recognition problems but also to time series analysis tasks. Recent MLP- and Transformer-based models, which excel in forecasting tasks, have shown the importance of a large receptive field. Therefore, by utilizing large kernels (e.g., 51) in MetaMixer, we achieve impressive performance. This highlights that the key is not any specific module but equipping the MetaMixer framework with the appropriate functionalities for each task.
+To demonstrate the generality of the MetaMixer framework, we apply our convolutional mixer design not only to image recognition problems but also to time series analysis tasks. Recent MLP- and Transformer-based models, which excel in forecasting tasks, have shown the importance of a large receptive field. Therefore, by utilizing large kernels (e.g., 51) in MetaMixer, we achieve impressive performance. **These results highlight that the key is not any specific module but equipping the MetaMixer framework with the appropriate functionalities for each task.**
 
 
 ### Usage
@@ -36,8 +36,18 @@ sh ./scripts/ETTm1.sh
 ```
 
 
-## Results
--
+### Results
+![forecasting_results](https://github.com/ysj9909/FFNet/blob/main/docs/forecasting_results.png)
+
+## Bibtex
+```
+@article{yun2024metamixer,
+  title={MetaMixer Is All You Need},
+  author={Yun, Seokju and Lee, Dongheon and Ro, Youngmin},
+  journal={arXiv preprint arXiv:2406.02021},
+  year={2024}
+}
+```
 
 
 ## Acknowledgement
