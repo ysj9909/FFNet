@@ -26,7 +26,7 @@ python ffnetsr/test.py --config $CONFIG_FILE
 ## Results
 
 ### Pre-trained Models and Results
-|  Variant   | Settings | Latency | model | CoreML model |
+|  Variant   | Settings | Latency | model | CoreML |
 |  ----  | ----  | --- | --- |   ---   |
 | FFNet<sub>sr</sub>-light  | DIV2K $\times 2$ | [1 sec.](https://github.com/ysj9909/FFNet/blob/main/docs/ffnet_sr_light.png) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/FFNetSR_light_DIV2K_2.pth) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnetsr_light_x2_hd.mlpackage.zip) |
 | FFNet<sub>sr</sub>  | DF2K $\times 2$ | [1.4 sec.](https://github.com/ysj9909/FFNet/blob/main/docs/ffnet_sr.png) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/FFNetSR_DF2K_2.pth) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnetsr_x2_hd.mlpackage.zip) |
