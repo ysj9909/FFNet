@@ -36,20 +36,20 @@ We hope that this intuition will catalyze a paradigm shift in the battle of netw
 ## Pre-trained Models
 
 ImageNet-1K
-| Variant | Resolution | Top-1 Acc. | #params | FLOPs | Latency | model |
-|:---:|:---:|:---:|:---:| :---:|:---:|:---:|
-| FFNet-1 | 256x256 | 81.3 | 13.7M | 2.9G | 1.8 |[model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_1.pth.tar) |
-| FFNet-2 | 256x256 | 82.9 | 26.9M | 6.0G | 3.1 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_2.pth.tar) |
-| FFNet-3 | 256x256 | 83.9 | 48.3M | 10.1G | 4.5 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_3.pth.tar) |
-| FFNet-3 | 384x384 | 84.5 | 48.3M | 22.8G | 9.1 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_3_384.pth.tar) |
-| FFNet-4 | 384x384 | 85.3 | 79.2M | 43.1G | 15.2 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_4_384.pth.tar) |
+| Variant | Resolution | Top-1 Acc. | #params | FLOPs | Latency | model | CoreML Model |
+|:---:|:---:|:---:|:---:| :---:|:---:|:---:|:---:|
+| FFNet-1 | 256x256 | 81.3 | 13.7M | 2.9G | [1.8](https://github.com/ysj9909/FFNet/blob/main/docs/latency_ffnet_1.png) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_1.pth.tar) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_1.mlpackage.zip) |
+| FFNet-2 | 256x256 | 82.9 | 26.9M | 6.0G | [3.1](https://github.com/ysj9909/FFNet/blob/main/docs/latency_ffnet_2.png) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_2.pth.tar) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_2.mlpackage.zip) |
+| FFNet-3 | 256x256 | 83.9 | 48.3M | 10.1G | [4.5](https://github.com/ysj9909/FFNet/blob/main/docs/latency_ffnet_3.png) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_3.pth.tar) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_3.mlpackage.zip) |
+| FFNet-3 | 384x384 | 84.5 | 48.3M | 22.8G | [9.1](https://github.com/ysj9909/FFNet/blob/main/docs/latency_ffnet_3_384.png) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_3_384.pth.tar) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_3_384.mlpackage.zip) |
+| FFNet-4 | 384x384 | 85.3 | 79.2M | 43.1G | [15.2](https://github.com/ysj9909/FFNet/blob/main/docs/latency_ffnet_4.png) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_4_384.pth.tar) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_4_384.mlpackage.zip) |
 
 Models trained on ImageNet-1K with knowledge distillation.
-| Variant | Resolution | Top-1 Acc. | #params | FLOPs | Latency | model |
-|:---:|:---:|:---:|:---:| :---:|:---:|:---:|
-| FFNet-1 | 256x256 | 82.1 | 13.7M | 2.9G | 1.8 |[model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_1_distillation.pth.tar) |
-| FFNet-2 | 256x256 | 83.7 | 26.9M | 6.0G | 3.1 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_2_distillation.pth.tar) |
-| FFNet-3 | 256x256 | 84.5 | 48.3M | 10.1G | 4.5 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_3_distillation.pth.tar) |
+| Variant | Resolution | Top-1 Acc. | #params | FLOPs | Latency | model | CoreML Model |
+|:---:|:---:|:---:|:---:| :---:|:---:|:---:|:---:|
+| FFNet-1 | 256x256 | 82.1 | 13.7M | 2.9G | 1.8 |[model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_1_distillation.pth.tar) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_1_distill.mlpackage.zip) |
+| FFNet-2 | 256x256 | 83.7 | 26.9M | 6.0G | 3.1 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_2_distillation.pth.tar) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_2_distill.mlpackage.zip) |
+| FFNet-3 | 256x256 | 84.5 | 48.3M | 10.1G | 4.5 | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_3_distillation.pth.tar) | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/ffnet_3_distill.mlpackage.zip) |
 
 ## Training
 ### Image Classification
