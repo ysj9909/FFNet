@@ -28,8 +28,8 @@ python ffnetsr/test.py --config $CONFIG_FILE
 ### Pre-trained Models and Results
 |  Variant   | Settings | model |
 |  ----  | ----  | --- |
-| FFNet<sub>sr</sub>-light  | DIV2K $\times 2$ | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/FFNetSR_light_DIV2K.pth) |
-| FFNet<sub>sr</sub>  | DF2K $\times 2$ | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/FFNetSR_DF2K.pth) | 
+| FFNet<sub>sr</sub>-light  | DIV2K $\times 2$ | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/FFNetSR_light_DIV2K_2.pth) |
+| FFNet<sub>sr</sub>  | DF2K $\times 2$ | [model](https://github.com/ysj9909/FFNet/releases/download/v1.0/FFNetSR_DF2K_2.pth) | 
 
 ![image](https://github.com/ysj9909/FFNet/blob/main/super_resolution/figs/Quantitative.png)
 
