@@ -86,7 +86,9 @@ sh dist_test.sh configs/ade20k/upernet_ffnet_4_512_160k_ade20k.py upernet_ffnet_
 ```
 
 **For system-level semantic segmentation experiments, we conducted our experiments based on the [SegNeXt](https://github.com/Visual-Attention-Network/SegNeXt/tree/main) codebase for a fair comparison.
+
 We applied the model code (`mmseg_custom/models/backbones/ffnet_sys.py` and `mmseg_custom/models/decode_heads/ffnet_head.py`) and configuration files to the SegNeXt code, enabling us to train and evaluate FFNet<sub>seg</sub>.
+
 Please follow the instructions of SegNeXt to train/evaluate our models.**
 
 
