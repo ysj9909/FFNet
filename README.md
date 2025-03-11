@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/arXiv-2406.02021-b31b1b.svg?style=flat" /></a>
 </p>
 
-Official PyTorch implementation of FFNet, from the following paper "[MetaMixer Is All You Need](https://arxiv.org/abs/2406.02021)".
+Official PyTorch implementation of FFNet, from the following paper "[FFNet: MetaMixer-based Efficient Convolutional Mixer Design](https://arxiv.org/abs/2406.02021)".
 
 *Seokju Yun, Dongheon Lee, Youngmin Ro.*
 
@@ -21,15 +21,14 @@ While self-attention is extensively explored as a key factor in performance, FFN
 FFN is a versatile operator seamlessly integrated into nearly all AI models to effectively harness rich representations.
 Recent works also show that FFN functions like key-value memories.
 Thus, akin to the query-key-value mechanism within self-attention, FFN can be viewed as a memory network, where the input serves as query and the two projection weights operate as keys and values, respectively.
-Based on these observations, we hypothesize that the importance lies in query-key-value framework itself rather than in self-attention.
+Based on these observations, we hypothesize that the importance lies in query-key-value framework itself for competitive performance.
 To verify this, we propose converting self-attention into a more FFN-like efficient token mixer with only convolutions while retaining query-key-value framework, namely \textit{FFNification}.
-Specifically, FFNification replaces query-key and attention coefficient-value interactions with large kernel convolutions and adopts GELU activation function instead of softmax.
+Specifically, FFNification replaces query-key-value interactions with large kernel convolutions and adopts GELU activation function instead of softmax.
 The derived token mixer, \textit{FFNified attention}, serves as key-value memories for detecting locally distributed spatial patterns, and operates in the opposite dimension to the ConvNeXt block within each corresponding sub-operation of the query-key-value framework.
 Building upon the above two modules, we present a family of Fast-Forward Networks (FFNet).
-Our FFNet achieves remarkable performance improvements over previous state-of-the-art methods across a wide range of tasks.
-The strong and general performance of our proposed method validates our hypothesis and leads us to introduce “MetaMixer”, a general mixer architecture that does not specify sub-operations within the query-key-value framework.
-We show that using only simple operations like convolution and GELU in the MetaMixer can achieve superior performance.
-We hope that this intuition will catalyze a paradigm shift in the battle of network structures, sparking a wave of new research.
+Despite being composed of only simple operators, FFNet outperforms sophisticated and highly specialized methods in each domain, with notable efficiency gains.
+These results validate our hypothesis, leading us to propose “MetaMixer”, a general mixer architecture that does not specify sub-operations within the query-key-value framework.
+Building on the MetaMixer framework, we also introduce a hybrid strategy that harmoniously integrates attention and FFNified attention, offering a comprehensive view of mixer design.
 </details>
 
 
@@ -206,7 +205,7 @@ For detailed documentation, please refer to these documents and codes as follows
 ## Bibtex
 ```
 @article{yun2024metamixer,
-  title={MetaMixer Is All You Need},
+  title={FFNet: MetaMixer-based Efficient Convolutional Mixer Design},
   author={Yun, Seokju and Lee, Dongheon and Ro, Youngmin},
   journal={arXiv preprint arXiv:2406.02021},
   year={2024}
