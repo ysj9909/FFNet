@@ -1,4 +1,4 @@
-# MetaMixer Is All You Need
+# FFNet: MetaMixer-based Efficient Convolutional Mixer Design
 
 <p align="left">
 <a href="https://arxiv.org/abs/2406.02021" alt="arXiv">
